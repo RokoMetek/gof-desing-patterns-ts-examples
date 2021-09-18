@@ -47,7 +47,18 @@
  4. Implement build() method to terminate method chain and return target 
  5. Call method get reference to builder and build object step-by-step 
 
+### Abstract Factory
+
+ - Implement class groups (type families)
+ - Declare Abstract Factory interface with factory method per product
+ - Use Abstract factory to instantiate group of related objects
+ - Greater abstraction of Factory-Method
+Advantages:
+ - - Clean Code
+ - - Compability between products
+
 ## Refrerences
 
- 1. [desing-patterns-in-typescirpt](https://github.com/gztchan/design-patterns-in-typescript)
+ 1. [Refactoring Guru](https://refactoring.guru/design-patterns)
+ 2. [Desing Pattern in TypeScript (git)](https://github.com/gztchan/design-patterns-in-typescript)
 
