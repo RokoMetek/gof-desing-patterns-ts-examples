@@ -171,6 +171,48 @@
 ### Analysis of Structural pattern similar behaviors
 
 ![GOF ANALYSIS STRUCTURAL PATTERNS](https://raw.githubusercontent.com/RokoMetek/gof-desing-patterns-ts-examples/main/Assets/Screenshot%202021-10-20%20at%2023-22-33%20GoF%20Design%20Patterns%20-%20Complete%20Course%20with%20Java%20Examples.png)
+### Bridge
+![GOF BRIDGE](https://refactoring.guru/images/patterns/diagrams/bridge/example-en.png)
+- split a large class or a set of closely related
+- decouple abstraction from it's implementation
+- separation and abstraction are separated in different classes
+- Implementation: 
+	- Think about operation that would be needed (describe this in abstraction class)
+	- If we need new orations - create new abstraction class
+	- If we have hierarchy that can be enhanced independently
+	- design the separation of concerns - separate abstraction of implementation of behavior
+
+### Flyweight
+
+![GOF Flyweight](https://refactoring.guru/images/patterns/diagrams/flyweight/solution3-en.png)
+- fit more objects into the available amount of RAM by sharing common parts of state
+- sharing state between objects (Particle effects)
+- not store duplicated state and the same data in each object
+- store only inner state and pass state as arguments
+- we can also create a factory of a flyways
+- Implementation:
+	- split state of object to inner and outer state (understand which state are shared across all objects and what is unique)
+	- Create where constant fields will be initialized through constructor
+	- Outer state can be passed as method arguments
+	- Create factory flyways that will cache shared state and will return already existing object. Client will only request object with specific state and not creating new.
+	- Client should store or generate outer state and pass it as an argument to flyweight
+
+### Composite
+![GOF Composite](https://refactoring.guru/images/patterns/diagrams/composite/structure-en.png)
+- Group objects in tree like structure
+- Use when the core model of your app can be represented as a tree
+- we don't need care about the concrete classes of objects that compose the tree 
+- example: 
+	- work with `Products` and `Boxes` through a common interface which declares a method for calculating the total price
+![Boxsee](https://refactoring.guru/images/patterns/diagrams/composite/problem-en.png)
+- Interact with whole tree objects as a single object
+- Implementation:
+	- can apply tree-like shape
+	- United interface that will combine operations on the group of objects and on the single object
+	- Create class of single object
+	- Create class for group of object that implements the same united interface
+	- Add operations to add and remove components into the container
+
 
 ## Refrerences
 
