@@ -250,7 +250,7 @@
 - Use when the core model of your app can be represented as a tree
 - we don't need care about the concrete classes of objects that compose the tree 
 - example: 
-	- work with `Products` and `Boxes` through a common interface which declares a method for calculating the total price
+- work with `Products` and `Boxes` through a common interface which declares a method for calculating the total price
 ![Boxsee](https://refactoring.guru/images/patterns/diagrams/composite/problem-en.png)
 - Interact with whole tree objects as a single object
 - Implementation:
