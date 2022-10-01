@@ -376,7 +376,7 @@
 ![Structure Chain of Responsibility](https://refactoring.guru/images/patterns/diagrams/chain-of-responsibility/structure.png?id=848f0fc8dca57a44974d63f8181f5406)<br><br>
 ```
 - Implementation:
-	-  Create interface of event handler and declare method for event handling
+	- Create interface of event handler and declare method for event handling
 	- Each implementaion of chain must contain reference to the next link in the chain
 	- Each chain interface implmentaion contriubtes to the event handling
 	- If object need pass forward to chaing, link object calls the method on the next element in the chain
